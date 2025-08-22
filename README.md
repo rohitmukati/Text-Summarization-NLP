@@ -2,14 +2,72 @@
 
 ## Workflows
 
-1. Update config.yaml
-2. Update params.yaml
-3. Update entity
-4. Update the configuration manager in src config
-5. update the conponents
-6. update the pipeline
-7. update the main.py
-8. update the app.py
+## 📂 Folder Structure
+
+📦 Text-Summarization-NLP  
+├── 📁 .github  
+│   └── 📁 workflows  
+│       └── main.yaml  
+│  
+├── 📁 config  
+│   └── config.yaml  
+│  
+├── 📁 research  
+│   ├── 01_data_ingestion.ipynb  
+│   ├── 02_data_validation.ipynb  
+│   ├── 03_data_transformation.ipynb  
+│   ├── 04_model_trainer.ipynb  
+│   ├── 05_Model_evaluation.ipynb  
+│   ├── Text_Summarization.ipynb  
+│   └── trials.ipynb  
+│  
+├── 📁 src  
+│   └── 📁 textSummarizer  
+│       ├── 📁 config  
+│       │   ├── __init__.py  
+│       │   └── configuration.py  
+│       │  
+│       ├── 📁 conponents  
+│       │   ├── __init__.py  
+│       │   ├── data_ingestion.py  
+│       │   ├── data_transformation.py  
+│       │   ├── data_validation.py  
+│       │   ├── model_evaluation.py  
+│       │   └── model_trainer.py  
+│       │  
+│       ├── 📁 constants  
+│       │   └── __init__.py  
+│       │  
+│       ├── 📁 entity  
+│       │   └── __init__.py  
+│       │  
+│       ├── 📁 logging  
+│       │   └── __init__.py  
+│       │  
+│       ├── 📁 pipeline  
+│       │   ├── __init__.py  
+│       │   ├── prediction.py  
+│       │   ├── stage_01_data_ingestion.py  
+│       │   ├── stage_02_data_validation.py  
+│       │   ├── stage_03_data_transformation.py  
+│       │   ├── stage_04_model_trainer.py  
+│       │   └── stage_05_model_evaluation.py  
+│       │  
+│       └── 📁 utils  
+│           ├── __init__.py  
+│           └── common.py  
+│  
+├── .gitignore  
+├── Dockerfile  
+├── LICENSE  
+├── README.md  
+├── app.py  
+├── main.py  
+├── params.yaml  
+├── requirements.txt  
+├── setup.py  
+├── template.py  
+└── test.py  
 
 
 # How to run?
